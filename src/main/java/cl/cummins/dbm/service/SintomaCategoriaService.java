@@ -1,7 +1,7 @@
 package cl.cummins.dbm.service;
 
-import cl.cummins.dbm.model.CategoriaSintoma;
-import cl.cummins.dbm.repository.ICategoriaSintomaRepository;
+import cl.cummins.dbm.model.SintomaCategoria;
+import cl.cummins.dbm.repository.ISintomaCategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,28 +9,28 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CategoriaSintomaService implements ICRUDService<CategoriaSintoma> {
+public class SintomaCategoriaService implements ICRUDService<SintomaCategoria> {
 
     @Autowired
-    private ICategoriaSintomaRepository repo;
+    private ISintomaCategoriaRepository repo;
 
     @Override
-    public List<CategoriaSintoma> findAll() {
+    public List<SintomaCategoria> findAll() {
         return repo.findAll();
     }
 
     @Override
-    public Optional<CategoriaSintoma> findById(Long id) {
+    public Optional<SintomaCategoria> findById(Long id) {
         return repo.findById(id);
     }
 
     @Override
-    public CategoriaSintoma create(CategoriaSintoma model) {
+    public SintomaCategoria create(SintomaCategoria model) {
         return repo.saveAndFlush(model);
     }
 
     @Override
-    public CategoriaSintoma update(CategoriaSintoma model) {
+    public SintomaCategoria update(SintomaCategoria model) {
         return repo.save(model);
     }
 

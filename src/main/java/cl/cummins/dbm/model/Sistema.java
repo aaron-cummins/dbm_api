@@ -11,10 +11,10 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "sintoma_categoria")
-public class CategoriaSintoma {
+@Table(name = "sistema")
+public class Sistema {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "sintoma_categoria_id_seq")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "sistema_id_seq")
     private Long id;
     private String nombre;
     private String e;
