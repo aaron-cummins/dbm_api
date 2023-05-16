@@ -2,9 +2,7 @@ package cl.cummins.dbm.controller;
 
 import cl.cummins.dbm.exception.ModelNotFoundException;
 import cl.cummins.dbm.model.Asesor;
-import cl.cummins.dbm.model.Faena;
 import cl.cummins.dbm.service.AsesorService;
-import cl.cummins.dbm.service.FaenaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
